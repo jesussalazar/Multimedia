@@ -6,7 +6,50 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/default.css" type="text/css" rel="stylesheet">
         <link href="css/ejemplo6.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+//<![CDATA[
+// Definir lista de extensiones y el tipo de fichero de audio asociado. Puedes añadir más
+var html5_audiotypes={ 
+"mp3": "audio/mpeg",
+"mp4": "audio/mp4",
+"ogg": "audio/ogg",
+"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+var html5audio=document.createElement('audio')
+if (html5audio.canPlayType){ //Comprobar soporte para audio HTML5
+for (var i=0; i<arguments.length; i++){
+var sourceel=document.createElement('source')
+sourceel.setAttribute('src', arguments[i])
+if (arguments[i].match(/.(w+)$/i))
+sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+html5audio.appendChild(sourceel)
+}
+html5audio.load()
+html5audio.playclip=function(){
+html5audio.pause()
+html5audio.currentTime=0
+html5audio.play()
+}
+return html5audio
+}
+else{
+return {playclip:function(){throw new Error('Su navegador no soporta audio HTML5')}}
+}
+}
+
+//Inicializar sonidos
+var hover1 = createsoundbite('http://k003.kiwi6.com/hotlink/564750mi8i/whistle.mp3');
+var hover2 = createsoundbite('audio/Nota-do.mp3');
+
+//Nótese que se pueden añadir ficheros con otras extensiones para mayor compatibilidad
+var click1 = createsoundbite('http://k003.kiwi6.com/hotlink/1510nx04no/click.mp3','http://k003.kiwi6.com/hotlink/dki95s7ty3/click.ogg');
+//]]>
+</script>
     </head>
+
+
     <body>
         <nav>
             <ul>
@@ -18,14 +61,14 @@
             </ul>
         </nav>
         <div class="contenedor">
-            <div class="vista">  
+            <div class="vista"> 
                 <img src="imagenes/do.jpg">  
-                <div class="mascara">  
-                    <h2>DO</h2>  
-                    <p>Aqui describo brevemente la nota "Do"</p>  
-                    <audio id="notado"src=audio/Nota-do.mp3 controls></audio>
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>  
+                <div class="mascara" onmouseover="hover2.playclip()">  
+                    DO
+                       <audio id="notado" preload="auto" src="audio/Nota-do.mp3">
+						</audio> 
                 </div>  
+                		
             </div>
             <div class="vista">  
                 <img src="imagenes/re.jpg">  

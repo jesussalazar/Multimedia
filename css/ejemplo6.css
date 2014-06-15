@@ -129,7 +129,7 @@
     -o-transition-delay: 0s;
     -ms-transition-delay: 0s;
     transition-delay: 0s;
-    <audio src=imagenes/88.mp3 autoplay ></audio>
+    
 }
 .vista:hover h2 { 
     opacity: 1;
