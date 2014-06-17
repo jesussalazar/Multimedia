@@ -40,8 +40,7 @@ return {playclip:function(){throw new Error('Su navegador no soporta audio HTML5
 }
 
 //Inicializar sonidos
-var hover1 = createsoundbite('http://k003.kiwi6.com/hotlink/564750mi8i/whistle.mp3');
-var hover2 = createsoundbite('audio/Nota-do.mp3');
+var hoverDo = createsoundbite('audio/Nota-do.mp3');
 
 //Nótese que se pueden añadir ficheros con otras extensiones para mayor compatibilidad
 var click1 = createsoundbite('http://k003.kiwi6.com/hotlink/1510nx04no/click.mp3','http://k003.kiwi6.com/hotlink/dki95s7ty3/click.ogg');
@@ -63,60 +62,49 @@ var click1 = createsoundbite('http://k003.kiwi6.com/hotlink/1510nx04no/click.mp3
         <div class="contenedor">
             <div class="vista"> 
                 <img src="imagenes/do.jpg">  
-                <div class="mascara" onmouseover="hover2.playclip()">  
+                <div class="mascara" onmouseover="hoverDo.playclip()">  
                     <img src="imagenes/do2.jpg">
-                       <audio id="notado" preload="auto" src="audio/Nota-do.mp3">
-						</audio> 
+                    <audio id="notado" preload="auto" src="audio/Nota-do.mp3"> </audio> 
                 </div>  
                 		
             </div>
             <div class="vista">  
                 <img src="imagenes/re.jpg">  
-                <div class="mascara">  
-                    <h2>RE</h2>  
-                    <p>Aqui describo brevenemte a "RE"</p>  
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>  
+                <div class="mascara"> 
+                    <img src="imagenes/re2.jpg"> 
                 </div>  
             </div>
             <div class="vista">  
                 <img src="imagenes/mi.jpg">  
                 <div class="mascara">  
-                    <h2>MI</h2>  
-                    <p>Describo brevemente</p>  
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>
+                    <img src="imagenes/mi2.jpg">
+                    
                 </div>  
             </div>
              <div class="vista">  
                 <img src="imagenes/fa.jpg">  
                 <div class="mascara">  
-                    <h2>FA</h2>  
-                    <p>describo brevemente</p>  
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>
+                    <img src="imagenes/fa2.jpg">
                 </div>  
             </div>
              <div class="vista">  
                 <img src="imagenes/sol.jpg">  
                 <div class="mascara">  
-                    <h2>SOL</h2>  
-                    <p>describo brevemente</p>  
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>
+                <img src="imagenes/sol2.jpg">
+                    
                 </div>  
             </div>
              <div class="vista">  
                 <img src="imagenes/la.jpg">  
-                <div class="mascara">  
-                    <h2>LA</h2>  
-                    <p>info LA</p>  
-
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>
+                <div class="mascara">
+                    <img src="imagenes/la2.jpg">  
+                    
                 </div>  
             </div>
              <div class="vista">  
                 <img src="imagenes/si.jpg">  
                 <div class="mascara">  
-                    <h2>SI</h2>  
-                    <p> info SI </p>  
-                    <a href="#" target="_blank" class="informacion">Leer Más</a>
+                    <img src="imagenes/si2.jpg">
                 </div>  
             </div>
         </div>
