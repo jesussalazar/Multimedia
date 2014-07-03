@@ -50,68 +50,150 @@ var hoverSi = createsoundbite('audio/Si.mp3');
 // Fin inicializar sonidos
  </script>
 
+  <script src="arrastra.js"></script>
+
 
 
 </head>
     <body>
-        <div id="logotipo">
-        <img src="imagenes/cab.jpg">
-        </div>
+            <div id="logotipo">
+                <img src="imagenes/cab.jpg">
+            </div>
+        
         <div class="contenedor">
             <div class="vista"> 
-                <img src="imagenes/do.jpg">  
+                <img src="imagenes/pre.jpg">  
                 <div class="mascara" onmouseover="hoverDo.playclip()">  
-                    <img src="imagenes/do2.jpg">
+                    <img src="imagenes/pre.jpg">
                     <audio id="notado" preload="auto" src="audio/Nota-do.mp3"> </audio> 
                 </div>  
                 		
             </div>
             <div class="vista">  
-                <img src="imagenes/do.jpg">  
-                <div class="mascara" onmouseover="hoverRe.playclip()"> 
-                    <img src="imagenes/do2.jpg"> 
+                <img src="imagenes/pre.jpg">  
+                <div class="mascara" onmouseover="hoverSi.playclip()"> 
+                    <img src="imagenes/pre.jpg"> 
                 </div>  
             </div>
             <div class="vista">  
-                <img src="imagenes/mi.jpg">  
-                <div class="mascara" onmouseover="hoverMi.playclip()">  
-                    <img src="imagenes/mi2.jpg">
+                <img src="imagenes/pre.jpg">  
+                <div class="mascara" onmouseover="hoverDo.playclip()">  
+                    <img src="imagenes/pre.jpg">
                     
                 </div>  
             </div>
              <div class="vista">  
-                <img src="imagenes/fa.jpg">  
+                <img src="imagenes/pre.jpg">  
                 <div class="mascara" onmouseover="hoverFa.playclip()"> 
-                    <img src="imagenes/fa2.jpg">
+                    <img src="imagenes/pre.jpg">
                 </div>  
             </div>
-
-        </div>
-
-        <div id="abajo" class="contenedor">
              <div class="vista">  
-                <img src="imagenes/sol.jpg">  
-                <div class="mascara" onmouseover="hoverSol.playclip()">  
-                <img src="imagenes/sol2.jpg">
+                <img src="imagenes/pre.jpg">  
+                <div class="mascara" onmouseover="hoverRe.playclip()">  
+                <img src="imagenes/pre.jpg">
                     
                 </div>  
             </div>
              <div class="vista">  
-                <img src="imagenes/la.jpg">  
-                <div class="mascara" onmouseover="hoverLa.playclip()">
-                    <img src="imagenes/la2.jpg">  
+                <img src="imagenes/pre.jpg">  
+                <div class="mascara" onmouseover="hoverMi.playclip()">
+                    <img src="imagenes/pre.jpg">  
                     
                 </div>  
             </div>
              <div class="vista">  
-                <img src="imagenes/si.jpg">  
-                <div class="mascara" onmouseover="hoverSi.playclip()">
-                    <img src="imagenes/si2.jpg">
+                <img src="imagenes/pre.jpg">  
+                <div class="mascara" onmouseover="hoverSol.playclip()">
+                    <img src="imagenes/pre.jpg">
                 </div>  
             </div>
-            <div class="vista">  
-                <img src="imagenes/jugar.jpg">  
-            </div>
+
+             <!Arrastrables>
+
+         <div id="div1" 
+            style="top:400px; 
+                    left:100px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/do3.jpg"> 
         </div>
+
+        <div id="div2" 
+            style="top:400px; 
+                    left:200px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/re3.jpg"> 
+        </div>
+
+        <div id="div3" 
+            style="top:400px; 
+                    left:300px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/mi3.jpg"> 
+        </div>
+
+                <div id="div4" 
+            style="top:400px; 
+                    left:400px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/fa3.jpg"> 
+        </div>
+
+                <div id="div5" 
+            style="top:400px; 
+                    left:500px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/sol3.jpg"> 
+        </div>
+
+                <div id="div6" 
+            style="top:400px; 
+                    left:600px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/la3.jpg"> 
+        </div>
+
+                <div id="div7" 
+            style="top:400px; 
+                    left:700px; 
+                    position:absolute;
+                    widht=50px;
+                    height=50px;
+                    display:inline-block;
+                    "onmousedown="comienzoMovimiento(event, this.id);" onmouseover="this.style.cursor='move'">
+
+                <img src="imagenes/si3.jpg"> 
+        </div>
+           
     </body>
 </html>
