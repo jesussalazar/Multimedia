@@ -58,6 +58,21 @@
 /******************************************************************************/
 /* Estilos para ejemplo 6 */
 
+#jugar
+{
+            width: 215px;
+            height: 200px;
+            border-radius: 10px;
+            background-image: url('../imagenes/jugar.jpg');
+            font-size:40px;
+            border-bottom: solid;
+}
+
+#jugar:hover {
+        background-image: url('../imagenes/jugar2.jpg');
+        cursor: pointer;
+            }
+
 
 
 

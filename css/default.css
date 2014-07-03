@@ -9,7 +9,7 @@
     font-style: normal;
 }
 body {
-    background: url('../imagenes/fondo1.png');
+    background: url('../imagenes/fondo.jpg');
     margin: 0;
 }
 a {
@@ -63,6 +63,7 @@ nav ul li a:hover, nav ul li a.activo {
     width: 1020px;
     height: 220px;
     margin: 0 auto;
-    align-content: center
+    align-content: center;
+    text-align: center;
     align-intems: center;
 }
